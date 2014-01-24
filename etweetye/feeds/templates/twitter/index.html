@@ -1,0 +1,9 @@
+{% if search_results %}
+    <ul>
+    {% for result in search_results %}
+        <li>{{ result.text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No tweets are available.</p>
+{% endif %}
